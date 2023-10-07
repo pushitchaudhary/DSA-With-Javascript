@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Traversig</title>
+    <title>Array Traversing and Accessing data</title>
 </head>
+<body>
 
-   <input type="text" id="element">
-   <button onclick="getElement()">Get Data</button>
+    <input type="text" id="element">
+
+    <button onclick="getElement()">Get Data</button>
 
     <script>
-        let data = [2,43,1,34,64,32,54,63];
+        let data = [2,3,4,1,3,5,23,53,13,3,5,234,455]
 
-        // for(i= 0; i<data.length; i++){
-        //     document.write(`${i} element is ${data[i]} <br>`)
+        // Traversing
+        // for (i= 0; i< data.length; i++){
+        //     document.write(`${i} id ${data[i]} <br>`)
         // }
 
-        // accessing the value
-        // let value = 3;
-        // document.write(data[value])
+        // accessing data
+        // let a = 7
+        // document.write(data[a])
 
-
+        // getting data from input field
         function getElement(){
             let value = document.getElementById('element').value;
-            if(value < data.length){
-                array_value = data[value];
-                alert(array_value)
+            if( 0<=value && value < data.length && typeof parseInt(value)==="number"){
+                let data_value = data[value]
+                alert(data_value);
             }else{
                 alert(`input value must be less than ${data.length}`)
             }
         }
+
+
 
     </script>
 </body>
