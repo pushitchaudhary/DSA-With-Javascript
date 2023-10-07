@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversig</title>
+</head>
+
+   <input type="text" id="element">
+   <button onclick="getElement()">Get Data</button>
+
+
+    <script>
+        let data = [2,43,1,34,64,32,54,63];
+
+        // for(i= 0; i<data.length; i++){
+        //     document.write(`${i} element is ${data[i]} <br>`)
+        // }
+
+        // accessing the value
+        // let value = 3;
+        // document.write(data[value])
+
+
+        function getElement(){
+            let value = document.getElementById('element').value;
+            if(value < data.length){
+                array_value = data[value];
+                alert(array_value)
+            }else{
+                alert(`input value must be less than ${data.length}`)
+            }
+        }
+
+    </script>
+</body>
+</html>
