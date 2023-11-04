@@ -8,7 +8,13 @@
 </head>
 <body>
     <!-- Data Accessing User baat data line ra tyo index ko data dekhaune -->
+    <!-- 
 
+      #  Accessing element
+      #  Accessing element with input and button
+      #  Validation
+
+     -->
 
     <input type="text" id="element">
     <input type="submit" value="submit" onclick="show()">
@@ -20,10 +26,14 @@
         function show(){
            const value = document.getElementById('element').value
             if(!isNaN(value)){
-                if(data.length >= value){
-                    alert(data[value])
+                if(value >= 0){
+                    if(data.length >= value || value == '-0'){
+                        alert(data[value])
+                    }else{
+                        alert('index 9 bhanda thorai hunu paryo my lord !!')
+                    }
                 }else{
-                    alert('index 9 bhanda thorai hunu paryo my lord !!')
+                    alert('value negative ma hunu vayena !!')
                 }
             }else{
                 alert('input number ma hunu paryo')
