@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Data Accessing User baat data line ra tyo index ko data dekhaune -->
+
+
+    <input type="text" id="element">
+    <input type="submit" value="submit" onclick="show()">
+
+
+    <script>
+        let data = [1,4,54,13,65,97,12,23,67]
+
+        function show(){
+           const value = document.getElementById('element').value
+            if(!isNaN(value)){
+                if(data.length >= value){
+                    alert(data[value])
+                }else{
+                    alert('index 9 bhanda thorai hunu paryo my lord !!')
+                }
+            }else{
+                alert('input number ma hunu paryo')
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>
