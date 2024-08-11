@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of All Elements</title>
+</head>
+<script>
+
+    // Question 1
+    // Sum of All Elements using loop
+
+    // const data = [2,4,5,1]
+    // let sumValue = 0
+    // for(let i = 0; i<data.length; i++){
+    //     sumValue += data[i]
+    // }
+    // document.write('Sum value is :', sumValue)
+
+// -------------------------------------------------
+
+// Sum of All Elements:
+// Write a function to find and return the sum of all elements in an array.
+
+        const sumFunction = (data)=>{
+            let sumValue = 0
+            for(let i = 0; i<data.length ; i++){
+                sumValue +=data[i] 
+            }
+            return sumValue
+        }
+
+        const data = [2,4,5,56,2]
+        const response = sumFunction(data)
+        document.write('Sum Value using function :', response)
+
+
+</script>
+<body>
+    
+</body>
+</html>

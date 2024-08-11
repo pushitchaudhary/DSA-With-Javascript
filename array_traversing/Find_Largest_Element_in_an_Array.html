@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Element in an Array:</title>
+</head>
+<script>
+    // Question 1
+    // Find Largest Element in an Array
+    // const data = [2,4,100,1,5,3,2]
+    // let highestValue = 0
+    // for(let i = 0; i<data.length; i++){
+    //     if(highestValue < data[i]){
+    //         highestValue = data[i]
+    //     }
+    // }
+    // document.write(`Hightest Vlaue is :`, highestValue)
+
+
+    // ----------------------------------------
+        // Question 2
+    // Find the Largest Element in an Array:
+// Write a function to find and return the largest element in an array.
+
+const findHighestNumber = (data)=>{
+    let highestNumber = 0
+    for(let i = 0; i < data.length ; i++){
+        if(highestNumber < data[i]){
+            highestNumber = data[i]
+        }
+    }
+    return highestNumber
+}   
+
+
+
+const data = [3,43,2,45,54,84,2,5,6,23,45,86]
+const response = findHighestNumber(data)
+document.write('Hightest Number from fuctnion : ', response)
+
+
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

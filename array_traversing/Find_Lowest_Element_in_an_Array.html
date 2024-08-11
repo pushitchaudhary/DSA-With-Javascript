@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Lowest Element in an Array</title>
+</head>
+
+<script>
+    // Question 1
+    // const data = [10, 44, 57, 3, 5, 25, 34, 64, 7, 4,1, 63]
+    // let lowestValue = data[0]  
+    // for(let i = 0; i <data.length ; i++){
+    //     if(lowestValue > data[i]){
+    //         lowestValue = data[i]
+    //     }
+    // }
+    // document.write('Lowest value from loop :', lowestValue)
+
+
+
+// ---------------------------------------------------------
+
+    // Question 2
+    const findLowestNumberFunction = (data)=>{
+        let lowestNumber = data[0]
+        for(let i = 0; i < data.length ; i++){
+            if(lowestNumber > data[i]){
+                lowestNumber = data[i]
+            }
+        }
+        return lowestNumber
+    }
+
+    const data = [10, 44, 57, 3, 5, 25, 34, 64, 7, 4, 1, 63]
+    const response = findLowestNumberFunction(data)
+    document.write('Lowest number from function :', response)
+
+
+</script>
+
+<body>
+    
+</body>
+</html>
