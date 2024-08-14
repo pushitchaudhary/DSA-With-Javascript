@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting Data In Array</title>
+</head>
+<script>
+
+
+//  const reverserFucntion = (data)=>{
+//     let emptyArray = []
+//     for (let i = data.length -1; i >= 0; i--){
+//         emptyArray.push(data[i])
+//     }
+//     return emptyArray
+//  }
+
+
+//    const data = [23,43]
+//    const newData = 4
+//    const postion = 1
+
+//    const response = data[postion] = newData
+//    console.log('new data :', data)
+   
+
+
+// const insertInArray = (data, newData, postion)=>{
+//     console.log(data)
+//     for(let i = data.length-1; i>=0; i--){
+//         if(i>=postion){
+//             data[i+1] = data[i]
+//             data[i] = newData
+//         }
+//     }
+//     return data
+// }
+
+
+
+// const data = [2,4,1,5]
+// const newData = 23
+// const postion = 1
+
+// const response = insertInArray(data, newData, postion)
+// console.log(response)
+
+
+
+const removeIndex = (data, postion)=>{
+    console.log(data)
+    for(let i = data.length -1 ; i>=0; i--){
+        if(i >= postion){
+            // console.log('postion :', i)
+            // console.log(data[i])
+            console.log(data[i])
+        }
+    }
+    return data
+}
+
+
+const data = [1,2,3,4]
+const postion = 1
+
+const response = removeIndex(data, postion)
+console.log(response)
+
+
+
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

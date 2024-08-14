@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removing_data_from_array</title>
+</head>
+<script>
+
+// const data = [3,53,5,23,52,44,2]
+// remove any postion data with loop and return fucntion 
+
+// WIth Loop
+// const data = [3,53,5,23,52,44,2]
+// console.log(data)
+// const postion = 3
+
+// for(let i = postion; i < data.length-1 ; i++){
+//     data[i] = data[i+1]
+// }
+// data.length = data.length-1
+
+// console.log(data)
+
+
+
+
+// With Return Function
+
+const removeDataFromArray = (data, postion)=>{
+    console.log(data)
+    for(let i = postion; i < data.length - 1; i++){
+       data[i] = data[i+1]
+    }
+    data.length = data.length - 1
+    return data
+}
+
+const data = [3,53,5,23,52,44,2]
+const postion = 3
+const response = removeDataFromArray(data, postion)
+console.log(response)
+
+</script>
+<body>
+    
+</body>
+</html>
