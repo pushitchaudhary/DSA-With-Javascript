@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Search In Array</title>
+</head>
+<script>
+
+
+// Searching Value Using Loop
+// const data = [23,43,53,22,56,26]
+// const searchData = 22
+// let indexValue = undefined
+// for(let i = 0; i<data.length; i++){
+//     if(data[i] === searchData){
+//         indexValue = i
+//     }
+// }
+// console.log('data index is :', indexValue)
+
+
+
+
+// Return Function
+
+const searchValueFunction = (data, searchValue, indexPostion)=>{
+    for(let i = 0; i<data.length ; i++){
+        if(data[i] === searchValue){
+           return indexPostion = i
+        }
+    }
+}
+
+const data = [23,43,53,22,56,26] 
+const searchValue = 22
+let indexPostion = undefined
+
+const response = searchValueFunction(data, searchValue, indexPostion)
+console.log(response)
+
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
